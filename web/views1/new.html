@@ -1,0 +1,14 @@
+<div>
+    <h2>New Person</h2>
+    <form>
+        <label>Name:</label><br/>
+        <input type="text" ng-model="newp.name" placeholder="Name"/><br/>
+        <label>Age:</label><br/>
+        <input type="number" ng-model="newp.age" placeholder="Age"/><br/>
+        
+        <input type="hidden" ng-model="newp.id"/><br/>
+        <input type="button" value="Save" ng-click="save()" class="btn btn-primary"/>
+    </form>
+    <p>{{newp}}</p>
+    <p>{{persons}}</p>
+</div>

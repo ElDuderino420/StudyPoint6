@@ -1,0 +1,17 @@
+<div>
+    <h2>Person List</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="person in persons">
+                <td>{{person.name}}</td>
+                <td><a href="#/details/{{$index}}">{{person.id}}</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
