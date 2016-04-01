@@ -1,0 +1,21 @@
+<div class="col-md-3" style="border: thin lightblue solid; border-radius: 5px;padding: 1em;">
+    <h2>{{nctrl.formtext}}</h2>
+    <form>
+        <label>Year:</label><br/>
+        <input type="number" name="year" ng-model="nctrl.newcar.year" placeholder="Year"/><br/>
+        <label>Registered:</label><br/>
+        <input type="date" name="year" ng-model="nctrl.newcar.registered"/><br/>
+        <label>Manufacture:</label><br/>
+        <input type="text" name="year" ng-model="nctrl.newcar.make" placeholder="Manufacture"/><br/>
+        <label>Model:</label><br/>
+        <input type="text" name="year" ng-model="nctrl.newcar.model" placeholder="Model"/><br/>
+        <label>Description:</label><br/>
+        <input type="text" name="year" ng-model="nctrl.newcar.description" placeholder="Description"/><br/>
+        <label>Price:</label><br/>
+        <input type="number" name="year" ng-model="nctrl.newcar.price" placeholder="Price"/><br/>
+        <input type="hidden" ng-model="nctrl.newcar.id"/><br/>
+        <a href="#/list">
+            <input type="button" value="Save" ng-click="nctrl.save()" class="btn btn-primary"/>
+        </a>
+    </form>
+</div>
